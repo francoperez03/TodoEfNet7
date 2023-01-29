@@ -1,8 +1,35 @@
 ### GET
-http://localhost:5194
+GET http://localhost:5194
 
 ### GET
-http://localhost:5194/dbconnection
+GET http://localhost:5194/dbconnection
 
 ### GET
-http://localhost:5194/api/tasks
+GET http://localhost:5194/api/tasks
+
+### POST
+POST http://localhost:5194/api/tasks
+content-type: application/json
+
+{
+    "categoryId": "4d7c7344-73a4-4ced-9bd6-93591a400254",
+    "title": "Visitar a mi tia",
+    "description": null,
+    "priorityTask": 2,
+    "updateTime": "2000-01-01T00:00:00"
+}
+
+### PUT
+PUT http://localhost:5194/api/tasks/68c30c09-9d85-4d96-a1a4-9718d2486ea4
+content-type: application/json
+
+{
+    "categoryId": "4d7c7344-73a4-4ced-9bd6-93591a400254",
+    "title": "Visitar a mi abuelita",
+    "description": "Caminando por el lado soleado de la calle",
+    "priorityTask": 2,
+    "updateTime": "2000-01-01T00:00:00"
+}
+
+### DELETE
+DELETE  http://localhost:5194/api/tasks/68c30c09-9d85-4d96-a1a4-9718d2486ea4
