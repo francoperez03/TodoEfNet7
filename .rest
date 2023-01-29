@@ -3,3 +3,6 @@ http://localhost:5194
 
 ### GET
 http://localhost:5194/dbconnection
+
+### GET
+http://localhost:5194/api/tasks
